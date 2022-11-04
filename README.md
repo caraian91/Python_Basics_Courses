@@ -5,13 +5,18 @@ Basics of PyCharm
 
 🔦 Basis:
 
-+ Variable
-+ Data types
++ Variable = a variable is a container in memory that stores values.
++ Data types: 
+  + int
+  + float
+  + string
+  + boolean
 + Operators: 
-  - of assignment
-  - arithmetic
-  - of comparison
-  - logic
+  - of assignment: =, +=, -=, *=, /=
+  - arithmetic: +, -, *, /, %(modulus), **(exponentiation)
+  - of comparison: >, <, >=, <=, ==, !=
+  - logic: and, or, not
++ Flow control: if/else
 + Data structures:	
   - dictionaries
   - lists
