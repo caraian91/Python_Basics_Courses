@@ -141,6 +141,7 @@ class Login(TestCase):
             # La final  testul  trebuie sa imi printeze fie
             if actual_url == expected_url:
                 print(f"Parola secreta este {cuvant}")
+                break
             else:
                 print("Nu am reusit sa gasesc parola")
 
