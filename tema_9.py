@@ -6,6 +6,7 @@ from time import sleep
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 
 # Implementează o clasă Login care să moștenească unittest.TestCase
 class Login(TestCase):
@@ -144,9 +145,14 @@ class Login(TestCase):
                 break
             else:
                 print("Nu am reusit sa gasesc parola")
-
-
-
-
+    def test_submit_login_additional_1(self):
+        self.chrome.find_element(*self.Button_Login).click()
+        error_message = self.chrome.find_element(*self.Message_Error_Displayed)
+        err_display = error_message.is_displayed()
+        self.assertTrue(error_message.is_displayed(),"It is not displayed the error")
+        if err_display == True:
+            self.chrome.find_element(*self.Complet_User).send_keys("tomsmith")
+            self.chrome.find_element(*self.Complet_Password).send_keys("SuperSecretPassword!")
+            self.chrome.find_element(*self.Button_Login).click()
 
 
