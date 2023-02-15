@@ -5,7 +5,7 @@
 
 print("*" * 50)
 x = float(input("Introduceti numarul 'x': "))
-if x >= 0 and x % 1 == 0:
+if x >= 0 and x == int(x):
     print("Numar este natural")
 else:
     print("Nu este un nr natural")
