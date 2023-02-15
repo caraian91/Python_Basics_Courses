@@ -81,17 +81,17 @@ else:
 print("*" * 50)
 nota = round(float(input("Nota acordata elevului este: ")))
 print(nota)
-if nota > 0 and nota <= 10:
-    if nota > 9:
+if 0 < nota <= 10:
+    if nota >= 9:
         nota = 'A'
         print(f"Nota in noul sistem este: {nota}")
-    elif nota > 8:
+    elif nota >= 8:
         nota = 'B'
         print(f"Nota in noul sistem este: {nota}")
-    elif nota > 7:
+    elif nota >= 7:
         nota = 'C'
         print(f"Nota in noul sistem este: {nota}")
-    elif nota > 6:
+    elif nota >= 6:
         nota = 'D'
         print(f"Nota in noul sistem este: {nota}")
     elif nota > 4:
