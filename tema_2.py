@@ -62,7 +62,7 @@ print("*" * 50)
 z = int(input("Introduceti numarul 'z': "))
 if x == y == z:
     print("Triunghiul este echilateral")
-elif x == y or z == y or x == z:
+elif (x == y and x != z) or (x == z and x != y) or (y == z and y != x):
     print("Triunghiul este isoscel")
 else:
     print("Triunghiul este oarecare")
