@@ -1,4 +1,5 @@
-from Functile.functi_5 import calculator_ziua_de_nastere,time_zone,reducere_pret,suma_nr,par_impar,nr_total_caractere,arieDr,arieCr,caracterul_x,caractere_mici_mari,lista_numere_pozitive,numar_mare,nr_primit,ziua_din_luna,calculator,lista_cifre,numer_maxim,sum_numere,liste_comune
+# from Functile.functi_5 import calculator_ziua_de_nastere,time_zone,reducere_pret,suma_nr,par_impar,nr_total_caractere,arieDr,arieCr,caracterul_x,caractere_mici_mari,lista_numere_pozitive,numar_mare,nr_primit,ziua_din_luna,calculator,lista_cifre,numer_maxim,sum_numere,liste_comune
+from Functile.functi_5 import *
 
 suma_nr()
 print(par_impar())

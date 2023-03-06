@@ -56,11 +56,7 @@ while i < len(masini):
         print(f"Am gasit masina {masini[i]} mai cautam")
     i += 1
 # --------------------------------------------------------------------------------------------------------
-# 4. Aceași listă;
-# Vine un cumpărător bogat dar indecis. Îi vom prezenta toate mașinile cu excepția Trabant și Lăstun.
-# Dacă mașina e Trabant sau Lăstun:
-# Folosește un cuvânt cheie care să dea skip la ce urmează (nu trebuie else).
-# Printează S-ar putea să vă placă mașina x.
+
 
 print("*" * 50)
 masini = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lăstun','Fiat', 'Trabant', 'Opel']
@@ -85,7 +81,11 @@ for i in masini:
     if  i == "Trabant" or i == "Lăstun":
         masini_vechi.append(i)
 masini[masini.index('Lăstun')] = "Tesla"
-masini[masini.index('Trabant')] = "Tesla"
+masini[masini.index('Trabant')] = "Tesla"# 4. Aceași listă;
+# Vine un cumpărător bogat dar indecis. Îi vom prezenta toate mașinile cu excepția Trabant și Lăstun.
+# Dacă mașina e Trabant sau Lăstun:
+# Folosește un cuvânt cheie care să dea skip la ce urmează (nu trebuie else).
+# Printează S-ar putea să vă placă mașina x.
 print(f"Modele vechi: {masini_vechi}")
 print(f"Modele noi: {masini}")
 # --------------------------------------------------------------------------------------------------------
